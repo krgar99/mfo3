@@ -10,16 +10,16 @@ right_arrow = 'right'
 heal_button = 'grave'
 
 while time.time() < timeout_start + timeout:
+
     keyboard.press(left_arrow)
     time.sleep(long)
     keyboard.press_and_release(heal_button)
     keyboard.release(left_arrow)
-    time.sleep(short)
 
+    time.sleep(short)
     keyboard.press_and_release(heal_button)
 
     keyboard.press(right_arrow)
     time.sleep(long)
-    keyboard.release(right_arrow)
-
     keyboard.press_and_release(heal_button)
+    keyboard.release(right_arrow)
